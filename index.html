@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Angsuran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pinjaman Online dan Hitung Angsuran</h1>
+    <div class="container">
+        <form id="loan-form">
+            <div class="form-group">
+                <label for="name">Nama Peminjam:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Tanggal Mulai Peminjaman:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Pokok Pinjaman (Rp):</label>
+                <input type="number" id="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="interest">Bunga per Tahun (%):</label>
+                <input type="number" id="interest" required>
+            </div>
+            <div class="form-group">
+                <label for="years">Jangka Waktu (bulan):</label>
+                <input type="number" id="years" required>
+            </div>
+            <button type="submit" id="calculate">Mulai Hitung</button>
+        </form>
+
+        <div id="results">
+            <h2>Hasil Angsuran</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Angsuran ke-</th>
+                        <th>Jatuh Tempo</th>
+                        <th>Angsuran Pokok</th>
+                        <th>Bunga</th>
+                        <th>Total Angsuran</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
